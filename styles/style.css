@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Righteous', cursive;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 66px;
+    letter-spacing: -0.004em;
+    color: #75B79E;
+    background-color: #EEF9BF;
+    text-align: center;
+}
+
+.jogo {
+    margin-top: 47px;
+    margin: 0 115px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card {
+    height: 146px;
+    width: 117px;
+    background-color: #A7E9AF;
+    border: 1px solid #99CEA8;
+    border-radius: 5px;
+    margin: 34px;
+        
+    
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+    margin-top: 24px;
+}
