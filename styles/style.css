@@ -25,10 +25,7 @@ body {
 
 .card {
     height: 146px;
-    width: 117px;
-    background-color: #A7E9AF;
-    border: 1px solid #6d8173;
-    border-radius: 5px;
+    width: 118px;
     margin: 34px;
     position: relative;
     font-size: 10px;
@@ -37,7 +34,7 @@ body {
 .card img {
     width: 100px;
     height: 100px;
-    margin-top: 24px;
+    margin-top: 16px;
 }
 
 /* TENTATIVA DE FAZER A CARTA VIRAR */
@@ -52,22 +49,31 @@ body {
     backface-visibility: hidden;
     transition: all .5s;
     transform-style: preserve-3d;
+    border: 1px solid #6d8173;
+    border-radius: 5px;
+    background-color: #A7E9AF;
+    /* compatibildiade iOS */
+    -webkit-backface-visibility: hidden;
+
 }
 
-.back-face {
+.virada {
     transform: rotateY(180deg);
 }
 
-.card:active .back-face {
-    transform: rotateY(0deg);
-}
-
-.card:active .front-face {
-    transform: rotateY(-180deg);
+.encontrada {
+    border-color: green;
+    border: 3px solid green;
+    filter: drop-shadow(1px 1px 2px rgb(100, 125, 100));
+    -webkit-filter: drop-shadow(1px 1px 2px rgb(100, 125, 100));
 }
 
 @media (max-width: 614px) {
     body {
         font-size: 36px;
+    }
+
+    .jogo {
+        margin: 0;
     }
 }
